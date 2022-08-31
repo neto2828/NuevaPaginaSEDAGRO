@@ -1,0 +1,178 @@
+.container-comunicacion{
+    margin-top: 80px;
+}
+.noticiasLink{
+    text-decoration: none !important;
+}
+
+.noticiasLink h5{
+    color: white;
+    padding: 0px 10px;
+}
+
+.angle{
+    font-size: 50px;
+    color: rgb(9,72,102);
+}
+
+.actualidad .carousel-control-prev, .actualidad .carousel-control-next{
+    height: 500px;
+}
+
+.datosNoticia{
+    background:rgba(9,36,50,0.7);
+    position:absolute; /*El div será ubicado con relación a la pantalla*/
+    left:0px; /*A la derecha deje un espacio de 0px*/
+    right:0px; /*A la izquierda deje un espacio de 0px*/
+    bottom:0px; /*Abajo deje un espacio de 0px*/
+}
+
+.noticiasBanner:before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.1);
+}
+.noticiasBanner:after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /*background: -webkit-linear-gradient(right, #092432, transparent, transparent);*/
+}
+
+.noticiasBanner .informacionNoticia{
+    color: white;
+    text-align: left;
+    z-index: 9;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .noticiasBanner .informacionNoticia{
+        width: 40%;
+    }
+}
+.informacionNoticia h5{
+    font-size: 28px;
+    font-family: Graphik-Bold !important;
+    padding: 0px 10px;
+}
+.noticiasBanner .informacionNoticia p{
+    font-size: 16px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button-com{
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+.container2:before,.container2:after{
+    content:" ";
+    display:table
+}
+.container2:after{
+    clear:both
+}
+.carouselExampleIndicators{
+    min-height:500px; 
+    margin-top:40px; 
+    margin-bottom: 45px;
+}
+#indicators-comunicados{
+    position: relative;
+    justify-content: flex-start;
+    margin-top: 10px;
+    z-index: 10;
+}
+#indicators-comunicados {
+    flex-direction: row !important;
+}
+#indicators-comunicados li{
+    height: 15px;
+    width: 15px;
+    text-indent: 0px;
+    background-color: #fff;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#carouselExampleControls .active{
+    background-color: var(--rosaM);
+}
+.carousel-control-prev, .carousel-control-next{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+}
+.icons{
+    height: 50px;
+    width: 50px;
+    margin-top: 8px;
+}
+@media (min-width: 1200px){
+    .container2{
+        width:100%
+    }
+}
+
+@media screen and (max-width: 768px){
+    .noticiasBanner .informacionNoticia h5{
+    font-size: 25px;
+    }
+    .noticiasBanner .informacionNoticia{
+        width: 100%;
+        bottom: 0;
+        height: 40%;
+    }
+    div#carouselExampleIndicators.carousel.slide{
+        margin-bottom: 25px!important;
+    }
+}
+@media screen and (max-width: 576px){
+    .container-comunicacion{
+    margin-top: 10px;
+    }
+    .noticiasBanner .informacionNoticia{
+        width: 100%;
+        bottom: 0;
+        height: 45%;
+    }
+    .noticiasBanner .informacionNoticia h5{
+    font-size: 20px;
+    }
+    .noticiasBanner .informacionNoticia p{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    #indicators-comunicados{
+        justify-content: center;
+    }
+    .btn.btn-gob-transparent{
+        font-size: 12px ;
+    }
+    .noticiasBanner .informacionNoticia{
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Consulta y Descarga de Reportes Agroclimáticos">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="shortcut icon" type="image/x-icon" href="http://cdn.hidalgo.gob.mx/logo.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.6/index.min.js"></script>
+  <script type="text/javascript" src="https://search.hidalgo.gob.mx/apps/global_search.js"></script>
+  <script type="text/javascript" src="http://cdn.hidalgo.gob.mx/json/comunicados.js"></script>
+  <script type="text/javascript" src="../assets/convocatorias.js"></script>
+  <title>Reportes Agroclimáticos | Secretaría de Desarrollo Agropecuario</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9519330-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-9519330-10');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Q5YLH3W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L4Q5YLH3W7');
+  </script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    window.$ = $;
+    window.classNames = classNames;
+  </script>
+  <div id="headergob" only-headers="true">
+    <configuracionbuscador>
+      <secretaria>Gobierno del Estado de Hidalgo</secretaria>
+      <dependencia>Gobierno del Estado de Hidalgo</dependencia>
+    </configuracionbuscador>
+    <secondnavbar>
+      <nombre>Secretaría de Desarrollo Agropecuario</nombre>
+      <logo src="https://cdn.hidalgo.gob.mx/logo_recta_2.png">
+        <menu>
+          <item titulo="Agenda del Secretario" url="./Agenda.html">
+          </item>
+          <item titulo="Transparencia" url="./Transparencia.html">
+            <url titulo="Art. 69 Ley de Transparencia (48 Rubros)">./48Rubros.html</url>
+            <url titulo="Art. 70 Ley de Transparencia">http://sedagro.hidalgo.gob.mx/transparencia/xlsx/2019/a70_f01_g%20SEDAGRO.xlsx</url>
+          </item>
+          </item>
+          <item titulo="Servicios" url="./Servicios.html">
+            <url titulo="Asesoría para el Desarrollo de Productos y la Comercialización">https://ruts.hidalgo.gob.mx/ver/8860</url>
+            <url titulo="Asistencia Técnica y Capacitación Pecuaria">https://ruts.hidalgo.gob.mx/ver/8865</url>
+            <url titulo="Banco de semen e Inseminación Artificial en Ovinos">https://ruts.hidalgo.gob.mx/ver/603</url>
+            <url titulo="Capacitación Acuícola y Pesquera">https://ruts.hidalgo.gob.mx/ver/674</url>
+            <url titulo="Capacitación en Elaboración de Quesos y Derivados Lácteos">https://ruts.hidalgo.gob.mx/ver/1575</url>
+            <url titulo="Capacitación en Nutrición y Manejo de Ganado Lechero">https://ruts.hidalgo.gob.mx/ver/1573</url>
+            <url titulo="Capacitación en Inseminación Artificial en Bovinos Leche">https://ruts.hidalgo.gob.mx/ver/1574</url>
+            <url titulo="Captación de Leche en Centros de Acopio">https://ruts.hidalgo.gob.mx/ver/1781</url>
+            <url titulo="Constitución de Sociedades">https://ruts.hidalgo.gob.mx/ver/8863</url>
+            <url titulo="Constitución de Grupos de Productores de Leche">https://ruts.hidalgo.gob.mx/ver/1572</url>
+            <url titulo="Laboratorio de Constatación de Leche">https://ruts.hidalgo.gob.mx/ver/1780</url>
+            <url titulo="Siembra de Crías de Peces">https://ruts.hidalgo.gob.mx/ver/8867</url>
+            <url titulo="Asesoría para el Trámite de la Membresía GS1 para la Trazabilidad en Productos Agropecuarios">https://ruts.hidalgo.gob.mx/ver/8862</url>
+            <url titulo="Entrega de Paquetes de Conejos">https://ruts.hidalgo.gob.mx/ver/609</url>
+            <url titulo="Componente Equipamiento de Distritos de Riego">https://ruts.hidalgo.gob.mx/ver/7629</url>
+            <url titulo="Componente Rehabilitación, Modernización y Tecnificación de Distritos de Riego">https://ruts.hidalgo.gob.mx/ver/7628</url>
+            <url titulo="Componente Rehabilitación, Modernización, Tecnificación, Equipamiento de Unidades de Riego y Proyectos Productivos en Zonas de Atención Prioritaria.">https://ruts.hidalgo.gob.mx/ver/7632</url>
+            <url titulo="Servicios Internos">./servint.html</url>
+            <url titulo="Avances Financieros SADER">./sader.html</url>
+          </item>
+          <item titulo="Beneficiarios" url="./Beneficiarios.html">
+          </item>
+          <item titulo="Convocatorias" url="./Convocatorias.html">
+          </item>
+        </menu>
+    </secondnavbar>
+    <FAB>
+      <item class="icon-material_ruts" href="https://ruts.hidalgo.gob.mx/">Trámites y Servicios</item>
+      <item class="icon-material_fb" href="https://www.facebook.com/HIDALGO.SEDAGRO/" class="link">Facebook</item>
+      <item class="icon-material_tw" href="https://twitter.com/SEDAGRO_HIDALGO" class="link">Twitter</item>
+    </FAB>
+  </div>
+  <script type="text/javascript" src="https://cdn.hidalgo.gob.mx/json/header-links.js"></script>
+  <script type="text/javascript" src="https://cdn.hidalgo.gob.mx/json/headergob/headergob.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.hidalgo.gob.mx/json/headergob/headergob.css" />
+
+  <div class="container container-small">
+    <div class="row row-gob row-body">
+      <div class="row-content">
+
+        <header class="col-12 top-title">
+          <h3 class="h3-apps">Reportes Agroclimáticos</h3>
+          <hr class="blue small-margin">
+        </header>
+        <!--INICIA AGROCLIMA PARA DANIEL-->
+        <div class="row">
+          <div class="col-md-12">
+            <br>
+            <!--Titulo del reporte actual-->
+            <h5>Reporte del 27 al 29 de Mayo del 2022</h5>
+            <br>
+            <iframe src="https://sedagro.hidalgo.gob.mx/descargas/clima/Mayo/27_al_29_de_mayo.pdf" width="100%" height="700" allow="fullscreen"></iframe>
+          </div>
+        </div>
+
+        --------------------------
+        <div id="accordion">
+          <!--Subtitulo de Hisotorial -->
+          <header class="col-12 top-title">
+            <h5 class="h3-apps">Historial de Reportes Agroclimáticos</h5>
+            <hr class="blue small-margin">
+          </header>
+
+
+
+
+          <div class="steps-row promo-home-tramites small-top-buffer tramitesmobile" style="margin-top: 35px!important;">
+            <div class="container" style="margin-bottom: 40px">
+              <div class="row">
+
+                <div class="col-md-4">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-success" data-toggle="collapse" data-target="#collapse2022" aria-expanded="false" aria-controls="collapse2022">
+                        <h5>2022</h5>
+                        <h6>Disponibilidad de los Reportes Agroclimáticos</h6>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse2022" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 27 al 29 de mayo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Mayo/27_al_29_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 23 al 26 de mayo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Mayo/23_al_26_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 16 al 19 de mayo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Mayo/16_al_19_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 06 al 08 de mayo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Mayo/06_al_08_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 02 al 05 de mayo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Mayo/02_al_05_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 25 al 28 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/25_al_28_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 22 al 24 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/22_al_24_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 18 al 21 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/18_al_21_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 11 al 14 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/11_al_14_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 08 al 10 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/08_al_10_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 04 al 07 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/04_al_07_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 01 al 04 de abril
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Abril/01_al_04_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 28 al 31 de marzo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/28_al_31_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 18 al 20 de marzo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/18_al_20_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 14 al 17 de marzo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/14_al_17_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                            <li class="list-group-item">Del 11 al 13 de marzo
+                              <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/11_al_13_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <!--hasta aqui-->   <!--Copiar de aqui-->
+                          <li class="list-group-item">Del 07 al 10 de marzo
+                            <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/07_al_10_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                              <i class="btn btn-transparencia">PDF</i>
+                            </a>
+                          </li>
+                          <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 04 al 06 de marzo
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/04_al_06_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 28 al 03 de marzo
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Marzo/28_al_03_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 25 al 27 de febrero
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Febrero/25_al_27_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 21 al 24 de febrero
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Febrero/21_al_24_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 18 al 20 de febrero
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Febrero/18_al_20_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 14 al 17 de febrero
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Febrero/14_al_17_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 04 al 06 de febrero
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Febrero/04_al_06_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 10 al 13 de enero
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Enero/10_al_13_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--Box Acordeon 2021-->
+                <div class="col-md-4">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h5>2021</h5>
+                        <h6>Disponibilidad de los Reportes Agroclimáticos</h6>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <!--Ultimo-->
+
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 20 al 23 de diciembre
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Diciembre/20_al_23_de_diciembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 13 al 16 de diciembre
+                          <a href="https://sedagro.hidalgo.gob.mx/descargas/clima/Diciembre/13_al_16_de_diciembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 29 al 01 de diciembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/noviembre/29_al_01_de_diciembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 22 al 25 de noviembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/noviembre/22_al_25_de_noviembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 15 al 18 de noviembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/noviembre/15_al_18_de_novimbre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 08 al 11 de noviembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/noviembre/08_al_11_de_noviembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 29 al 31 de octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/29_al_31_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 25 al 28 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/25_al_28_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 25 al 24 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/22_al_24_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 18 al 21 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/18_al_21_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 15 al 17 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/15_al_17_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 11 al 14 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/11_al_14_de_Octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 08 al 10 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/08_al_10_de_Octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 04 al 07 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/4_al_7_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 01 al 03 de Octubre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Octubre/01_al_3_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 27 al 30 de Septiembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Septiembre/27_al_30_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 24 al 26 de Septiembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Septiembre/24_al_26_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 20 al 23 de Septiembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Septiembre/20_al_23_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 17 al 19 de Septiembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Septiembre/17_al_19_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 13 al 16 de Septiembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Septiembre/13_al_16_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 09 al 12 de Septiembre
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Septiembre/9_al_12_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 10 al 13 de Mayo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Mayo/10_al_13_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <li class="list-group-item">Del 3 al 6 de Mayo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Mayo/3_al_6_de_mayo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 26 al 29 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/26_al_29_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 19 al 22 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/19_al_22_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 16 al 18 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/16_al_18_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 12 al 15 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/12_al_15_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 9 al 11 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/9_al_11_de_abril..pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 5 al 8 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/5_al_8_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 2 al 4 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/2_al_4_de_abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 29 al 1 de Abril
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Abril/29_de_Marzo_al_1_de_Abril.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 26 al 28 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/26_al_28_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 22 al 25 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/22_al_25_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 19 al 21 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/19_al_21_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 15 al 18 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/15_al_18_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 12 al 14 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/12_al_14_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 8 al 11 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/8_al_11_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 5 al 7 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/5_al_7_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 2 al 4 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Marzo/2_al_4_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 26 de febrero al 1 de marzo
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/26_de_febrero_al_1_de_marzo.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 23 al 25 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/23_al_25_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 19 al 22 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/19_al_22_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 16 al 18 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/16_al_18_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 12 al 14 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/12_al_14_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 9 al 11 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/9_al_11_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 5 al 7 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/5_al_7_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 2 al 4 de febrero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Febrero/2_al_4_de_febrero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 29 al 31 de enero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Enero/29_al_31_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 26 al 28 de enero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Enero/26_al_28_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 22 al 24 de enero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Enero/22_al_24_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <!--Copiar de aqui-->
+                        <li class="list-group-item">Del 19 al 21 de enero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Enero/19_al_21_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <!--hasta aqui-->
+                        <li class="list-group-item">Del 15 al 17 de enero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Enero/15_al_17_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 12 al 14 de enero
+                          <a href="https://sedagrohidalgo.site/Agroclima/2021/Enero/12_al_14_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 8 al 10 de enero
+                          <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/8_al_10_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 4 al 7 de enero
+                          <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5>2020</h5>
+                        <h6>Disponibilidad de los Reportes Agroclimáticos</h6>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item">Del 28 al 31 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/28-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 21 al 24 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/21-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 18 al 20 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/18-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 14 al 17 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/14-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 11 al 13 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/11-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 07 al 10 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/07-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 04 al 06 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/04-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 30 noviembre al 03 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/30-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 27 al 29 de noviembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/27-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 23 al 26 de noviembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/23-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">05 de noviembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/05-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">30 de octubre
+                          <a href="http://sedagrohidalgo.site/Agroclima/30-10-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Contador de visitas -->
+    <center>
+      <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=290772">
+    </center>
+    <!-- Fin Contador de visitas -->
+  </div>
+  <div class="container container-footer">
+    <div class="row">
+      <div class="footer">
+        <div class="col-md-4 col-sm-12">
+          <img alt="logotipo Hidalgo Crece Contigo" class="logo-hidalgo" src="https://cdn.hidalgo.gob.mx/logo_hgo_2019.png">
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img src="http://cdn.hidalgo.gob.mx/escudo_blanco.svg" class="escudo-footer" />
+          <p>© 2019 Gobierno del Estado de Hidalgo</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <p class="contacto-footer"><strong>Contacto</strong><br>Carretera México-Pachuca km 93.5<br>Colonia Venta Prieta, Ex Centro Minero<br>Edificio 1A, Pachuca de Soto, Hgo. Cp.42080<br>+52 (771) 71
+            78000<br>sedagro@hidalgo.gob.mx</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

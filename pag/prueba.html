@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Consulta y Descarga de Reportes Agroclimáticos">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="shortcut icon" type="image/x-icon" href="http://cdn.hidalgo.gob.mx/logo.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.6/index.min.js"></script>
+  <script type="text/javascript" src="https://search.hidalgo.gob.mx/apps/global_search.js"></script>
+  <script type="text/javascript" src="http://cdn.hidalgo.gob.mx/json/comunicados.js"></script>
+  <script type="text/javascript" src="../assets/convocatorias.js"></script>
+  <title>Reportes Agroclimáticos | Secretaría de Desarrollo Agropecuario</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9519330-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-9519330-10');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Q5YLH3W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L4Q5YLH3W7');
+  </script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    window.$ = $;
+    window.classNames = classNames;
+  </script>
+  <div id="headergob" only-headers="true">
+    <configuracionbuscador>
+      <secretaria>Gobierno del Estado de Hidalgo</secretaria>
+      <dependencia>Gobierno del Estado de Hidalgo</dependencia>
+    </configuracionbuscador>
+    <secondnavbar>
+      <nombre>Secretaría de Desarrollo Agropecuario</nombre>
+      <logo src="https://cdn.hidalgo.gob.mx/logo_recta_2.png">
+        <menu>
+          <item titulo="Agenda del Secretario" url="./Agenda.html">
+          </item>
+          <item titulo="Transparencia" url="./Transparencia.html">
+            <url titulo="Art. 69 Ley de Transparencia (48 Rubros)">./48Rubros.html</url>
+            <url titulo="Art. 70 Ley de Transparencia">http://sedagro.hidalgo.gob.mx/transparencia/xlsx/2019/a70_f01_g%20SEDAGRO.xlsx</url>
+          </item>
+          </item>
+          <item titulo="Servicios" url="./Servicios.html">
+            <url titulo="Asesoría para el Desarrollo de Productos y la Comercialización">https://ruts.hidalgo.gob.mx/ver/8860</url>
+            <url titulo="Asistencia Técnica y Capacitación Pecuaria">https://ruts.hidalgo.gob.mx/ver/8865</url>
+            <url titulo="Banco de semen e Inseminación Artificial en Ovinos">https://ruts.hidalgo.gob.mx/ver/603</url>
+            <url titulo="Capacitación Acuícola y Pesquera">https://ruts.hidalgo.gob.mx/ver/674</url>
+            <url titulo="Capacitación en Elaboración de Quesos y Derivados Lácteos">https://ruts.hidalgo.gob.mx/ver/1575</url>
+            <url titulo="Capacitación en Nutrición y Manejo de Ganado Lechero">https://ruts.hidalgo.gob.mx/ver/1573</url>
+            <url titulo="Capacitación en Inseminación Artificial en Bovinos Leche">https://ruts.hidalgo.gob.mx/ver/1574</url>
+            <url titulo="Captación de Leche en Centros de Acopio">https://ruts.hidalgo.gob.mx/ver/1781</url>
+            <url titulo="Constitución de Sociedades">https://ruts.hidalgo.gob.mx/ver/8863</url>
+            <url titulo="Constitución de Grupos de Productores de Leche">https://ruts.hidalgo.gob.mx/ver/1572</url>
+            <url titulo="Laboratorio de Constatación de Leche">https://ruts.hidalgo.gob.mx/ver/1780</url>
+            <url titulo="Siembra de Crías de Peces">https://ruts.hidalgo.gob.mx/ver/8867</url>
+            <url titulo="Asesoría para el Trámite de la Membresía GS1 para la Trazabilidad en Productos Agropecuarios">https://ruts.hidalgo.gob.mx/ver/8862</url>
+            <url titulo="Entrega de Paquetes de Conejos">https://ruts.hidalgo.gob.mx/ver/609</url>
+            <url titulo="Componente Equipamiento de Distritos de Riego">https://ruts.hidalgo.gob.mx/ver/7629</url>
+            <url titulo="Componente Rehabilitación, Modernización y Tecnificación de Distritos de Riego">https://ruts.hidalgo.gob.mx/ver/7628</url>
+            <url titulo="Componente Rehabilitación, Modernización, Tecnificación, Equipamiento de Unidades de Riego y Proyectos Productivos en Zonas de Atención Prioritaria.">https://ruts.hidalgo.gob.mx/ver/7632</url>
+            <url titulo="Servicios Internos">./servint.html</url>
+            <url titulo="Avances Financieros SADER">./sader.html</url>
+          </item>
+          <item titulo="Beneficiarios" url="./Beneficiarios.html">
+          </item>
+          <item titulo="Convocatorias" url="./Convocatorias.html">
+          </item>
+        </menu>
+    </secondnavbar>
+    <FAB>
+      <item class="icon-material_ruts" href="https://ruts.hidalgo.gob.mx/">Trámites y Servicios</item>
+      <item class="icon-material_fb" href="https://www.facebook.com/HIDALGO.SEDAGRO/" class="link">Facebook</item>
+      <item class="icon-material_tw" href="https://twitter.com/SEDAGRO_HIDALGO" class="link">Twitter</item>
+    </FAB>
+  </div>
+  <script type="text/javascript" src="https://cdn.hidalgo.gob.mx/json/header-links.js"></script>
+  <script type="text/javascript" src="https://cdn.hidalgo.gob.mx/json/headergob/headergob.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.hidalgo.gob.mx/json/headergob/headergob.css" />
+
+  <div class="container container-small">
+    <div class="row row-gob row-body">
+      <div class="row-content">
+
+        <header class="col-12 top-title">
+          <h3 class="h3-apps">Reportes Agroclimáticos</h3>
+          <hr class="blue small-margin">
+        </header>
+        <!--INICIA AGROCLIMA PARA DANIEL-->
+
+        <div class="row">
+          <div class="col-md-12">
+            <br>
+            <!--Titulo del reporte actual-->
+            <h5>Reporte del 11 al 14 de Octubre del 2021</h5>
+            <br>
+            <iframe src="https://sedagrohidalgo.site/Agroclima/2021/Octubre/11_al_14_de_Octubre.pdf" width="100%" height="700" allow="fullscreen"></iframe>
+          </div>
+        </div>
+
+        <div id="accordion">
+          <!--Subtitulo de Hisotorial -->
+          <header class="col-12 top-title">
+            <h5 class="h3-apps">Historial de Reportes Agroclimáticos</h5>
+            <hr class="blue small-margin">
+          </header>
+
+      
+
+          <div class="steps-row promo-home-tramites small-top-buffer tramitesmobile" style="margin-top: 35px!important;">
+            <div class="container" style="margin-bottom: 40px">
+              <div class="row">
+                <!--Box Acordeon 2021-->
+                <div class="col-md-12">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h5>2021</h5>
+                        <h6>Disponibilidad de los Reportes Agroclimáticos</h6>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <!--Ultimo-->
+                        <!--Copiar de aqui-->
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Enero">Enero</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Febrero">Febrero</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Marzo">Marzo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Abril">Abril</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Mayo">Mayo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Junio">Junio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Julio">Julio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Agosto">Agosto</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Septiembre">Septiembre</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#Octubre">Octubre</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Noviembre">Noviembre</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Diciembre">Diciembre</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div id="Enero" class="container tab-pane"><br>
+                            <h3>Enero</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+
+                            <li class="list-group-item">Del 12 al 14 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/12_al_14_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+
+                            <li class="list-group-item">Del 15 al 17 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/15_al_17_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+
+                            <li class="list-group-item">Del 19 al 21 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/19_al_21_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+
+                            <li class="list-group-item">Del 22 al 24 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/22_al_24_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+
+                            <li class="list-group-item">Del 26 al 28 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/26_al_28_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+
+                            <li class="list-group-item">Del 29 al 31 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/29_al_31_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Febrero" class="container tab-pane"><br>
+                            <h3>Febrero</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Marzo" class="container tab-pane"><br>
+                            <h3>Marzo</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Abril" class="container tab-pane"><br>
+                            <h3>Abril</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Mayo" class="container tab-pane"><br>
+                            <h3>Mayo</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Junio" class="container tab-pane"><br>
+                            <h3>Junio</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Julio" class="container tab-pane"><br>
+                            <h3>Julio</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Agosto" class="container tab-pane"><br>
+                            <h3>Agosto</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Septiembre" class="container tab-pane"><br>
+                            <h3>Septiembre</h3>
+                            <li class="list-group-item">Del 09 al 12 de Septiembre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Septiembre/9_al_12_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <li class="list-group-item">Del 13 al 16 de Septiembre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Septiembre/13_al_16_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <li class="list-group-item">Del 17 al 19 de Septiembre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Septiembre/17_al_19_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <li class="list-group-item">Del 20 al 23 de Septiembre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Septiembre/20_al_23_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <li class="list-group-item">Del 24 al 26 de Septiembre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Septiembre/24_al_26_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <li class="list-group-item">Del 27 al 30 de Septiembre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Septiembre/27_al_30_de_septiembre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Octubre" class="container tab-pane active"><br>
+                            <h3>Octubre</h3>
+                            <li class="list-group-item">Del 01 al 03 de Octubre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Octubre/01_al_3_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                            <li class="list-group-item">Del 04 al 07 de Octubre
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Octubre/4_al_7_de_octubre.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Noviembre" class="container tab-pane"><br>
+                            <h3>Noviembre</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+                          <div id="Diciembre" class="container tab-pane"><br>
+                            <h3>Diciembre</h3>
+                            <li class="list-group-item">Del 4 al 7 de enero
+                              <a href="http://sedagrohidalgo.site/Agroclima/2021/Enero/4_al_7_de_enero.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="btn btn-transparencia">PDF</i>
+                              </a>
+                            </li>
+                          </div>
+
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5>2020</h5>
+                        <h6>Disponibilidad de los Reportes Agroclimáticos</h6>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item">Del 28 al 31 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/28-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 21 al 24 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/21-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 18 al 20 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/18-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 14 al 17 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/14-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 11 al 13 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/11-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 07 al 10 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/07-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 04 al 06 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/04-12-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 30 noviembre al 03 de diciembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/30-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 27 al 29 de noviembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/27-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">Del 23 al 26 de noviembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/23-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">05 de noviembre
+                          <a href="http://sedagrohidalgo.site/Agroclima/05-11-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                        <li class="list-group-item">30 de octubre
+                          <a href="http://sedagrohidalgo.site/Agroclima/30-10-2020.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="btn btn-transparencia">PDF</i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contador de visitas -->
+    <center>
+      <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=290772">
+    </center>
+    <!-- Fin Contador de visitas -->
+  </div>
+  <div class="container container-footer">
+    <div class="row">
+      <div class="footer">
+        <div class="col-md-4 col-sm-12">
+          <img alt="logotipo Hidalgo Crece Contigo" class="logo-hidalgo" src="https://cdn.hidalgo.gob.mx/logo_hgo_2019.png">
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img src="http://cdn.hidalgo.gob.mx/escudo_blanco.svg" class="escudo-footer" />
+          <p>© 2019 Gobierno del Estado de Hidalgo</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <p class="contacto-footer"><strong>Contacto</strong><br>Carretera México-Pachuca km 93.5<br>Colonia Venta Prieta, Ex Centro Minero<br>Edificio 1A, Pachuca de Soto, Hgo. Cp.42080<br>+52 (771) 71
+            78000<br>sedagro@hidalgo.gob.mx</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
