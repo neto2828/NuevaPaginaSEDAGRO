@@ -795,7 +795,7 @@ a #emailHelp{
 }
 .indicadores a{
     text-decoration: none;
-    color: #212529;
+    color: var(--gold);
 }
 .card-indicador{
     padding: 50px;
@@ -960,7 +960,7 @@ a #emailHelp{
 }
 .btn-transparencia{
   color: white;
-  background-color: #96999a;
+  background-color: var(--gray);
   font-size: 16px;
   font-weight: bold;
   padding: 5px 20px;
@@ -968,7 +968,7 @@ a #emailHelp{
 }
 
 .btn-transparencia:hover {
-  background-color: #72848a;
+  background-color: var(--gray);
   color: white;
 }
 
