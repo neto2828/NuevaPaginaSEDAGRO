@@ -117,7 +117,7 @@
 }
 
 #carouselExampleControls .active{
-    background-color: var(--rosaM);
+    background-color: var(--gray);
 }
 .carousel-control-prev, .carousel-control-next{
     display: flex; 

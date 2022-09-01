@@ -1,17 +1,11 @@
-@font-face{
-    font-family: graphic-light;
-    src: url("http://cdn.hidalgo.gob.mx/fonts/Graphik-Light.otf");
-}
-
-@font-face{
-    font-family: "Graphik-Black";
-    src: url("http://cdn.hidalgo.gob.mx/fonts/Graphik-Black.otf");
-}
-
-@font-face{
-    font-family: "Graphik-Bold";
-    src: url("http://cdn.hidalgo.gob.mx/fonts/Graphik-Bold.otf");
-}
+@font-face {
+    font-family: Poppins;
+    src: url(https://cdn.hidalgo.gob.mx/transicion/fonts/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url(https://cdn.hidalgo.gob.mx/transicion/fonts/Poppins-SemiBold.ttf);
+  }
 
 body * {
     font-family: graphic-light !important;
@@ -32,11 +26,11 @@ body * {
 }
 
 :root{
-    --azulF:#092432;
-    --azulM:#084866;
-    --rosaF:#e3007d;
-    --verdeI:#70b62a;
-    --rosaM:#e63c4f;
+    --wine: #9C223C;
+    --gold: #BC955C;
+    --pink: #B51C40;
+    --greenI: #265B4E;
+    --gray: #656565;
 }
 .fa, .far, .fas {
     font-family: "Font Awesome 5 Pro" !important;
@@ -55,7 +49,7 @@ body * {
 }
 
 .badge-primary{
-    background-color: var(--azulM) !important;
+    background-color: var(--gold) !important;
 }
 @media (max-width: 576px){
     .row-gob{
@@ -86,10 +80,10 @@ body * {
   color:white;
 }
 ._box h4{
-    color: var(--azulF) !important;
+    color: var(--wine) !important;
 }
 ._box h5{
-    color: var(--azulM) !important;
+    color: var(--gold) !important;
 }
 .bd-example{
     width: 100%;
@@ -159,13 +153,13 @@ body * {
 }
 .btn-gobpink{
     color: #fff;
-    background-color: var(--rosaM);
-    border-color: var(--rosaM);
+    background-color: var(--gray);
+    border-color: var(--gray);
 }
 .btn-gobpink:hover{
     color: #fff;
-    background-color: var(--verdeI);
-    border-color: var(--verdeI);
+    background-color: var(--greenI);
+    border-color: var(--greenI);
     transition: 500ms
 }
 .btn-gob-transparent {
@@ -201,7 +195,7 @@ body * {
 .carousel-indicators li h5{
     text-align: center;
     margin-top: 15px;
-    color: var(--azulF);
+    color: var(--wine);
     font-family: "Graphik-Black" !important;
 }
 .car-mob{
@@ -233,13 +227,13 @@ header h3{
     border-top-color: #dce0e0;
 }
 .blue{
-    color: var(--azulF)
+    color: var(--wine)
 }
 .blue:before{
     content: " ";
     width: 35px;
     height: 5px;
-    background-color: var(--azulF) ;
+    background-color: var(--wine) ;
     display: block;
     position: absolute;
 }
@@ -247,14 +241,14 @@ header h3{
     width: 100%;
 }
 .titulo-ligas{
-    background-color: var(--azulM);
+    background-color: var(--gold);
     min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .ligas-interes .row{
-    border: 1px solid var(--azulM);
+    border: 1px solid var(--gold);
     margin:0;
     padding: 30px 0px;
 }
@@ -271,17 +265,17 @@ header h3{
     padding-inline-start: 0px;
 }
 .ligas-interes a{
-    text-decoration: underline var(--azulM);
+    text-decoration: underline var(--gold);
     vertical-align: middle;
-    color: var(--azulM);
+    color: var(--gold);
 }
 .ligas-interes a:hover{
     text-decoration: none !important;
-    color: var(--azulM);
+    color: var(--gold);
 }
 .ligas-interes li{
     list-style: none;
-    color: var(--azulM);
+    color: var(--gold);
 }
 .ligas-interes img{
     width: 30px;
@@ -289,7 +283,7 @@ header h3{
 }
 .iconos-ligas{
     font-size: 23px;
-    color: var(--azulF);
+    color: var(--wine);
     margin-right: 15px;
 }
 .modal-open .modal.modal-center {
@@ -306,7 +300,7 @@ header h3{
     }
 }
 .apps{
-    /*border: 1px solid var(--azulM);*/
+    /*border: 1px solid var(--gold);*/
     border-radius: 2px;
     padding: 10px 20px 10px 20px;
     transition: 500ms;
@@ -383,12 +377,12 @@ header h3{
     margin-top: 15px;
 }
 .form-Index{
-    border:2px var(--azulM) solid;
+    border:2px var(--gold) solid;
     padding: 10px 20px;
 }
 .btn-gob{
-    background-color: var(--azulM);
-    border-color: var(--azulM);
+    background-color: var(--gold);
+    border-color: var(--gold);
 }
 .row-planes{
     padding: 20px;
@@ -397,10 +391,10 @@ header h3{
     font-size: 70px;
 }
 .row-planes h4{
-    color: var(--azulF)
+    color: var(--wine)
 }
 .row-planes p{
-    color: var(--verdeI);
+    color: var(--greenI);
     font-family:"Graphik-Bold" !important;
 }
 .p-card{
@@ -411,14 +405,14 @@ header h3{
     display: flex;
 }
 .p-card i{
-    color: var(--azulM);
+    color: var(--gold);
     margin-right:15px;
 }
 .p-card a{
-    text-decoration-color: var(--azulM);
+    text-decoration-color: var(--gold);
 }
 .planes{
-    border-left: 2px solid var(--azulM)
+    border-left: 2px solid var(--gold)
 }
 @media (max-width: 768px){
     .planes{
@@ -439,7 +433,7 @@ header h3{
 }
 .footer{
     height: 200px;
-    background-color: var(--azulF);
+    background-color: var(--wine);
     width: 300%;
     display:flex;
 }
@@ -543,7 +537,7 @@ header h3{
 .row-buzon{
     height: 100%;
     padding: 10px;
-    background-color: var(--azulM);
+    background-color: var(--gold);
 }
 @media (max-width: 576px){
     .row-buzon{
@@ -574,14 +568,14 @@ a #emailHelp{
     justify-content: space-between;
 }
 .apps-logos a{
-    color: var(--azulM);
+    color: var(--gold);
     font-size: 30px;
     padding: 10px;
     display: flex;
     text-decoration: none !important;
 }
 .apps-logos a:hover, a:link{
-    color: var(--azulF);
+    color: var(--wine);
     text-decoration: none !important;
 }
 .apps-logos p{
@@ -593,7 +587,7 @@ a #emailHelp{
     max-height: 800px;
 }
 .container-not{
-    border-top: 3px #E73C4E solid;
+    border-top: 3px var(--gold) solid;
     margin: 0;
     padding: 20px;
     background-color: #fafafa;
@@ -647,7 +641,7 @@ a #emailHelp{
     font-size: 12px;
     padding-bottom: 0px;
     margin-bottom: 10px;
-    color: var(--azulF);
+    color: var(--wine);
 }
 .slide-box .titles{
     display: inline-block;
@@ -661,12 +655,12 @@ a #emailHelp{
 }
 .slide-box .descripcion-nota h5{
     margin-top: 5px;
-    color: var(--azulF);
+    color: var(--wine);
     font-family: "Graphik-Bold" !important;
     font-size: 14px;
 }
 .slide-box .descripcion-nota p{
-    color: var(--azulM);
+    color: var(--gold);
     font-size: 12px;
 }
 
@@ -750,7 +744,7 @@ a #emailHelp{
     }
 }
 .arrows-notas{
-    background-color: var(--azulF);
+    background-color: var(--wine);
     padding: 15px;
     border-radius: 50%;
 }
@@ -788,12 +782,12 @@ a #emailHelp{
 .steps-row article h3 a{
     font-size: 22px;
     font-weight:500;
-    color:#084866 !important;
+    color:var(--wine) !important;
     text-decoration: underline !important;
 }
 .steps-row article a:hover{
     font-weight:500;
-    color:#1b5dab !important;
+    color: var(--gold) !important;
     text-decoration:none !important
 }
 .indicadores h2{
@@ -823,14 +817,14 @@ a #emailHelp{
 .icon-material_wa{
     background: url(../img/whatsapp.svg);
     background-size: 20px;
-    color: var(--azulF);
+    color: var(--wine);
     background-repeat: no-repeat;
     background-position: center;
 }
 .icon-material_te{
     background: url(../img/telegram.svg);
     background-size: 20px;
-    color: var(--azulF);
+    color: var(--wine);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -877,7 +871,7 @@ a #emailHelp{
     height: 130px;
     font-weight: 700;
     clear: both;
-    background-color: #084866;
+    background-color: var(--wine);
     border-radius: 50%;
 }
 .iconoTrans {
@@ -904,7 +898,7 @@ a #emailHelp{
      margin: 0 auto;
 }
  .ligas-minicards p{
-     border-left: 1px solid var(--rosaM);
+     border-left: 1px solid var(--gray);
      padding-left: 5px;
      display: inline-block;
 }
@@ -914,7 +908,7 @@ a #emailHelp{
 }
 
 .btn-table{
-  background-color: #084866;
+  background-color: var(--wine);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -927,7 +921,7 @@ a #emailHelp{
 }
 
 .btn-table:hover {
-  background-color: #084866;
+  background-color: var(--gold);
   color: white;
 }
 
@@ -957,11 +951,11 @@ a #emailHelp{
 
 .btn-info{
     color: white;
-    background-color: #092432;
+    background-color: var(--wine);
 }
 
 .btn-info:hover {
-  background-color: #18526f;
+  background-color: var(--gold);
   color: white;
 }
 .btn-transparencia{
@@ -970,7 +964,7 @@ a #emailHelp{
   font-size: 16px;
   font-weight: bold;
   padding: 5px 20px;
-  color: #18526f;
+  color: var(--gold);
 }
 
 .btn-transparencia:hover {
@@ -980,7 +974,7 @@ a #emailHelp{
 
 .btn-avancetabla{
   color: white;
-  background-color: #092432;
+  background-color: var(--wine);
   font-size: 16px;
   font-weight: bold;
   padding: 5px 10px;
@@ -988,7 +982,7 @@ a #emailHelp{
 }
 
 .btn-avancetabla:hover {
-  background-color: #084866;
+  background-color: var(--gold);
   color: white;
 }
 
@@ -1017,13 +1011,13 @@ a #emailHelp{
    width:200px;
    height:70px;
    font-size: 14px;
-   background-color:#082331;
-   border-left:5px solid #E76374;
+   background-color:var(--wine);
+   border-left:5px solid var(--pink);
    padding-left:10px;
    text-decoration:none;
    color:#ffffff;
 }
 
 #lista1 ul li a:hover {
-background-color:#084866;
+background-color:var(--gold);
 }

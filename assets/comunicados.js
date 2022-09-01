@@ -1,6 +1,6 @@
 const comunicados = [
   {
-    "image":"https://sedagro.hidalgo.gob.mx/img/cohicafe.png",
+    "image":"https://cdn.hidalgo.gob.mx/transicion/fondotransicion.png",
     "titulo":"Tómate un Café de Hidalgo",
     "descripcion":"Conoce a los productores de café del Estado",
     "link":"",
@@ -10,7 +10,7 @@ const comunicados = [
     "position":"center"
   },
   {
-    "image":"https://cdn.hidalgo.gob.mx/escudo-titular.png",
+    "image":"https://cdn.hidalgo.gob.mx/transicion/fondotransicion.png",
     "titulo":"Sanción por Incumplimiento de la Ley de Desarrollo Pecuario",
     "descripcion":"Sanciones impuestas debido al Incumplimiento de los requisitos para la movilización pecuaria",
     "link":"https://sedagro.hidalgo.gob.mx/descargas/Sanciones_Pecuarias.pdf",
@@ -21,7 +21,7 @@ const comunicados = [
   },
 
   {
-    "image":"../img/Ventanilla.jpg",
+    "image":"https://cdn.hidalgo.gob.mx/transicion/fondotransicion.png",
     "titulo":"Ventanilla SEDAGROH",
     "descripcion":"Ventanilla de Programas Sociales, Servicios y Trámites ofrecidos por la SEDAGROH",
     "link":"https://sedagro.hidalgo.gob.mx/ventanilla.html",
@@ -32,7 +32,7 @@ const comunicados = [
   },
 
   {
-    "image":"../img/Logo.png",
+    "image":"https://cdn.hidalgo.gob.mx/transicion/fondotransicion.png",
     "titulo":"Tianguis SEDAGROH",
     "descripcion":"Tianguis SEDAGROH",
     "link":"http://tianguis.sedagrohidalgo.site/",
@@ -42,7 +42,7 @@ const comunicados = [
     "position":"center"
   },
   {
-    "image":"../img/Agroclima.png",
+    "image":"https://cdn.hidalgo.gob.mx/transicion/fondotransicion.png",
     //"image":"https://cdn.hidalgo.gob.mx/escudo-titular.png",
     "titulo":"Reportes Agroclimáticos",
     "descripcion":"Reportes Agroclimáticos del Estado de Hidalgo",
