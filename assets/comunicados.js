@@ -2,8 +2,8 @@ const comunicados = [
   {
     "image":"https://cdn.hidalgo.gob.mx/transicion/fondotransicion.png",
     "titulo":"Tómate un Café de Hidalgo",
-    "descripcion":"Conoce a los productores de café del Estado",
-    "link":"",
+    "descripcion":"Conoce a Dirección General de Desarrollo de la Cafeticultura",
+    "link":"https://sedagro.hidalgo.gob.mx/pag/Cafeticultura/",
     "tipo":"fas fa-quote-left",
     "color":"#FFF",
     "size":"80%",

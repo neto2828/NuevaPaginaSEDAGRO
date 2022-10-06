@@ -1021,3 +1021,14 @@ a #emailHelp{
 #lista1 ul li a:hover {
 background-color:var(--gold);
 }
+
+.banner-area {
+  min-height: 50vh;
+      height: 50vh;
+      position: relative;
+}
+
+u{
+  text-decoration: none !important;
+
+}
