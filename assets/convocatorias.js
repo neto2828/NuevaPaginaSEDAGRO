@@ -1,4 +1,9 @@
 const rubros = [
+		{
+		"url":"../descargas/convocatorias/CRITERIOS_OPERATIVOS_SAC_2022.pdf",
+			"icono":"",
+			"nombre":"Criterios Operativos para la Solicitud, Autorización y Seguimiento al Seguro Agrícola Catastrófico 2022"
+	},
 	{
 		"url":"../descargas/convocatorias/SeguroAgricola2022.pdf",
 			"icono":"",
