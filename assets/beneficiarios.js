@@ -1,5 +1,47 @@
 const rubros = [
 	{
+		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Avena_2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Entrega De Semilla De Avena",
+			"anio":"2022"
+	},
+	{
+		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Herramientas_2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Entrega De Herramientas A Productores Del Campo",
+			"anio":"2022"
+	},
+	{
+		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Cebada_2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Entrega De Semilla De Cebada",
+			"anio":"2022"
+	},
+	{
+		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Aves_Postura_2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Aves de postura para la producción de huevo en áreas rurales",
+			"anio":"2022"
+	},
+	{
+		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Semen_Sexado_2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Repoblamiento de ganado lechero con Semen Sexado",
+			"anio":"2022"
+	},
+	{
+		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Maiz_2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Entrega de Semilla Certificada de Maíz (Kilo por Kilo)",
+			"anio":"2022"
+	},
+	{
+		"url":"../descargas/padrones/PUBLICACION_RESUMEN_SAC_2021.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Seguro Agrícola Catastrófico (SAC)",
+			"anio":"2021"
+	},
+	{
 		"url":"../descargas/padrones/PROGRAMA_DE_INFRAESTRUCTURA_USO_COLECTIVO_ALMACENAMIENTO_APROVECHAMIENTO_AGUA_2021.pdf",
 			"icono":"../img/iconos/pdf.svg",
 			"nombre":"Programa de Infraestructura Para El Uso Colectivo, Almacenamiento y Aprovechamiento de Agua",
