@@ -1,9 +1,9 @@
 const rubros = [
-	//{
-		//"url":"../descargas/convocatorias/",
-		//	"icono":"",
-		//	"nombre":"Reglas de Operación para el Otorgamiento de Subsidios y Apoyos 2023"
-	//},
+	{
+		"url":"../descargas/convocatorias/ReglasOperacion2023.pdf",
+			"icono":"",
+			"nombre":"Reglas de Operación para el Otorgamiento de Subsidios y Apoyos 2023"
+	},
 		{
 		"url":"../descargas/convocatorias/CRITERIOS_OPERATIVOS_SAC_2022.pdf",
 			"icono":"",
