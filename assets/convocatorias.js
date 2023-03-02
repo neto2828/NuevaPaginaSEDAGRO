@@ -1,5 +1,45 @@
 const rubros = [
 	{
+		"url":"../descargas/convocatorias/Reconversion2023.pdf",
+			"icono":"",
+			"nombre":"Reconversión productiva 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/Maguey2023.pdf",
+			"icono":"",
+			"nombre":"Entrega de hijuelos de maguey 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/CuniculturaApicultura2023.pdf",
+			"icono":"",
+			"nombre":"Impulso de la cunicultura y apicultura hidalguense 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/MejoramientoGenetico2023.pdf",
+			"icono":"",
+			"nombre":"Mejoramiento genético pecuario 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/Suelo2023.pdf",
+			"icono":"",
+			"nombre":"Análisis de suelos 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/Jitomate2023.pdf",
+			"icono":"",
+			"nombre":"Entrega de semilla certificada de jitomate 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/CebadaAvena2023.pdf",
+			"icono":"",
+			"nombre":"Entrega de semilla de cebada y avena 2023"
+	},
+	{
+		"url":"../descargas/convocatorias/Maiz2023.pdf",
+			"icono":"",
+			"nombre":"Entrega de Semilla Certificada de Maíz 2023"
+	},
+	{
 		"url":"../descargas/convocatorias/ReglasOperacion2023.pdf",
 			"icono":"",
 			"nombre":"Reglas de Operación para el Otorgamiento de Subsidios y Apoyos 2023"
