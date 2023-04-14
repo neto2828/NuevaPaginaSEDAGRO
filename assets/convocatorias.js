@@ -1,5 +1,10 @@
 const rubros = [
 	{
+		"url":"http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/ReglasOperacion/2023/AlcanceReglasOperación.pdf",
+			"icono":"",
+			"nombre":"Alcance a Reglas de Operación para el Otorgamiento de Subsidios y Apoyos 2023"
+	},
+	{
 		"url":"../descargas/convocatorias/Reconversion2023.pdf",
 			"icono":"",
 			"nombre":"Reconversión productiva 2023"
