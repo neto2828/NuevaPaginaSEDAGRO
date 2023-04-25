@@ -1,5 +1,10 @@
 const rubros = [
 	{
+		"url":"http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Convocatorias/2023/LineamientosInternosNormalEstatal.pdf",
+			"icono":"",
+			"nombre":"Lineamientos Internos Programa Normal Estatal en Alcance a Reglas de Operación 2023"
+	},
+	{
 		"url":"http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/ReglasOperacion/2023/AlcanceReglasOperación.pdf",
 			"icono":"",
 			"nombre":"Alcance a Reglas de Operación para el Otorgamiento de Subsidios y Apoyos 2023"
