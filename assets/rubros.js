@@ -125,7 +125,7 @@ const rubros = [
 	    "nombre":"25.Dictámenes de Estados Financieros"
 	},
 	{
-		"url":"../transparencia/48rubros/Asignacion_Recursos_Publicos_Personas.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Asignacion_de_Recursos_Publicos_a_personas.html",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/AsignacionRecursosPublicosPersonas.png",
 	    "nombre":"26.Asignacion de Recursos Publicos a Personas"
 	},
@@ -195,12 +195,12 @@ const rubros = [
 	    "nombre":"39.Actas y Resoluciones del Comité de Transparencia"
 	},
 	{
-		"url":"../transparencia/48rubros/Evaluacion_Encuestas_Programas_Financiados.html",
+		"url":"https://s-finanzas.hidalgo.gob.mx/transparencia/48rubros/Evaluacion_y_Encuestas_a_Programas_Financiados_con_Recursos_Publicos.html",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/EvaluacionencuestasProgramas.png",
 	    "nombre":"40.Evaluacion y Encuestas a Programas Financiados con Recursos Públicos"
 	},
 	{
-		"url":"../transparencia/48rubros/Estudios_Pagados.html",
+		"url":"https://s-finanzas.hidalgo.gob.mx/transparencia/48rubros/Estudios_Pagados_con_Recursos_Publicos.html",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/EstudiosPagadosRecursosPublicos.png",
 	    "nombre":"41.Estudios Pagados con Recursos Públicos"
 	},
