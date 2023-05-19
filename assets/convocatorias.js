@@ -35,11 +35,11 @@ const rubros = [
     icono: "",
     nombre: "Equipamiento para productores de Maguey",
   },
-  {
-    url: "http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Convocatorias/2023/IV%20Transformar%20Acu%C3%ADcola%20Convocatoria.pdf",
-    icono: "",
-    nombre: "Equipamiento Acuícola",
-  },
+  //{
+  //  url: "http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Convocatorias/2023/IV%20Transformar%20Acu%C3%ADcola%20Convocatoria.pdf",
+  //  icono: "",
+  //  nombre: "Equipamiento Acuícola",
+  //},
   {
     url: "http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Convocatorias/2023/III%20Transformar%20Leche%20Convocatoria.pdf",
     icono: "",
