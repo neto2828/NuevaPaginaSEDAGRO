@@ -1,5 +1,17 @@
 const rubros = [
 	{
+		"url":"http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Beneficiarios/2022/CriasTruchas2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Entrega De Crias de Truchas",
+			"anio":"2022"
+	},
+	{
+		"url":"http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Beneficiarios/2022/CriasBagre2022.pdf",
+			"icono":"../img/iconos/pdf.svg",
+			"nombre":"Entrega De Crias de Bagre",
+			"anio":"2022"
+	},
+	{
 		"url":"https://sedagro.hidalgo.gob.mx/transparencia/48rubros/XV/Avena_2022.pdf",
 			"icono":"../img/iconos/pdf.svg",
 			"nombre":"Entrega De Semilla De Avena",
