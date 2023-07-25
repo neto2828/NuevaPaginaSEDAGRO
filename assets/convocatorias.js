@@ -1,5 +1,16 @@
 const rubros = [
   {
+    url: "https://sedagro.hidalgo.gob.mx/descargas/ConvocatoriaAcompannamientoTecnico2023.docx.pdf",
+    icono: "",
+    nombre: "Convocatoria Acompañamiento Técnico 2023",
+  },
+
+  {
+    url: "https://sedagro.hidalgo.gob.mx/descargas/LiniamientosAcompanamientoTecnico2023.pdf",
+    icono: "",
+    nombre: "Lineaminetos Acompañamiento Técnico 2023",
+  },
+  {
     url: "http://transparenciadocs.hidalgo.gob.mx/dependencias/agricultura/dir1/SEDAGROH/Convocatorias/2023/I%20Mujer%20Rural%20Huertos.pdf",
     icono: "",
     nombre: "Fomento a la Poducción Familiar Mediante Huertos Familiares",
