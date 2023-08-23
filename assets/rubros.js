@@ -35,7 +35,7 @@ const rubros = [
 	    "nombre":"7.Directorio"
 	},
 	{
-		"url":"https://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Sueldos.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Sueldos",
 		//"url":"../transparencia/48rubros/Sueldos.html",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/Sueldos.png",
 	    "nombre":"8.Sueldos"
@@ -46,7 +46,7 @@ const rubros = [
 	    "nombre":"9.Viáticos"
 	},
 	{
-		"url":"http://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Plazas.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Plazas",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/Plazas.png",
 	    "nombre":"10.Plazas"
 	},
@@ -66,7 +66,7 @@ const rubros = [
 	    "nombre":"13.Datos de Contacto de la Unidad"
 	},
 	{
-		"url":"http://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Convocatorias.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Convocatorias",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/Convocatorias.png",
 	    "nombre":"14.Convocatorias"
 	},
@@ -76,7 +76,7 @@ const rubros = [
 	    "nombre":"15.Programas Sociales"
 	},
 	{
-		"url":"http://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Relaciones_Laborales.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Relaciones%20Laborales",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/RelacionesLaborales.png",
 	    "nombre":"16.Relaciones Laborales"
 	},
@@ -126,7 +126,7 @@ const rubros = [
 	    "nombre":"25.Dictámenes de Estados Financieros"
 	},
 	{
-		"url":"https://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Asignacion_de_Recursos_Publicos_a_personas.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Asignaci%C3%B3n%20de%20Recursos%20P%C3%BAblicos%20a%20Personas",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/AsignacionRecursosPublicosPersonas.png",
 	    "nombre":"26.Asignacion de Recursos Publicos a Personas"
 	},
@@ -166,7 +166,7 @@ const rubros = [
 	    "nombre":"33.Convenios con Sectores Social y Privados"
 	},
 	{
-		"url":"http://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Inventario_de_Bienes.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Inventario%20de%20Bienes",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/InventarioBienes.png",
 	    "nombre":"34.Inventario de Bienes"
 	},
@@ -206,7 +206,7 @@ const rubros = [
 	    "nombre":"41.Estudios Pagados con Recursos Públicos"
 	},
 	{
-		"url":"http://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Listado_de_Jubilados_y_Pensionados.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/Transparencia/Rubros/DetalleRubro/Listados%20Jubilados%20y%20Pensionados",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/ListadoJubiladosPencionados.png",
 	    "nombre":"42.Listado de Jubilados y Pensionados"
 	},
