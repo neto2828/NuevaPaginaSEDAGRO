@@ -9,11 +9,11 @@ const rubros = [
 	    "icono":"",
 	    "nombre":"Asistencia Técnica y Capacitación Pecuaria"
 	},
-	{
-		"url":"https://ruts.hidalgo.gob.mx/ver/603",
-			"icono":"",
-			"nombre":"Banco de semen e Inseminación Artificial en Ovinos."
-	},
+	// {
+	// 	"url":"https://ruts.hidalgo.gob.mx/ver/603",
+	// 		"icono":"",
+	// 		"nombre":"Banco de semen e Inseminación Artificial en Ovinos."
+	// },
 	{
 		"url":"https://ruts.hidalgo.gob.mx/ver/674",
 			"icono":"",

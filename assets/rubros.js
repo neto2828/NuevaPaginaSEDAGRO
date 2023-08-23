@@ -35,7 +35,8 @@ const rubros = [
 	    "nombre":"7.Directorio"
 	},
 	{
-		"url":"../transparencia/48rubros/Sueldos.html",
+		"url":"https://oficialiamayor.hidalgo.gob.mx/transparencia/48rubros/Sueldos.html",
+		//"url":"../transparencia/48rubros/Sueldos.html",
 	    "icono":"http://cdn.hidalgo.gob.mx/plantilla_secretarial/Rubros/PNG/Sueldos.png",
 	    "nombre":"8.Sueldos"
 	},

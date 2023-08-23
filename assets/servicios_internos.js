@@ -26,6 +26,11 @@ const rubros = [
 			"icono":"",
 			"nombre":"Formulario de Seguimiento de Riesgos."
 	},
+	{
+		"url":"https://sedagro.hidalgo.gob.mx/descargas/postal_agronegocios.png",
+			"icono":"",
+			"nombre":"Servicios de la Subsecretaria de Agronegocios."
+	},
 ]
 
 class Rubros {
